@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>El Faro - Noticias</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #325b97;
+      color: white;
+    }
+
+    .logo {
+      height: 40px;
+    }
+
+    .hero {
+      background: #f8f9fa;
+      padding: 1rem;
+      border-bottom: 2px solid #e0e0e0;
+    }
+
+    .highlight-news {
+      border-bottom: 2px solid #ccc;
+      margin-bottom: 2rem;
+    }
+
+    .news-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .news-category {
+      font-size: 0.85rem;
+      color: #6c757d;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: white;
+      padding: 2.5rem 1rem;
+    }
+
+    .audio-player {
+      margin-top: 0.5rem;
+      width: 100%;
+    }
+
+    .section-title {
+      border-left: 4px solid #325b97;
+      padding-left: 10px;
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+    }
+
+    .news-card img {
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .notice-bar {
+      background: #ffcf3f;
+      color: #000;
+      padding: 0.5rem;
+      text-align: center;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 576px) {
+      .news-card img {
+        height: 150px;
+      }
+      .news-title {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sección superior de avisos -->
+  <div class="notice-bar">
+    Suscríbete gratis al newsletter 'El Faro', para que seas el primero en saber las últimas noticias.
+  </div>
+
+  <!-- Header y navegación -->
+  <header class="py-3 px-3 px-md-4 d-flex justify-content-between align-items-center flex-wrap">
+    <div class="d-flex align-items-center mb-2 mb-md-0">
+      <img src="https://png.pngtree.com/png-vector/20220906/ourmid/pngtree-glowing-lighthouse-sign-at-sea-png-image_6138996.png" alt="Logo El Faro" class="logo me-2">
+      <h1 class="h5 mb-0">El Faro</h1>
+    </div>
+    <nav>
+      <ul class="nav flex-column flex-sm-row">
+        <li class="nav-item"><a href="#inicio" class="nav-link text-white">Inicio</a></li>
+        <li class="nav-item"><a href="#deportes" class="nav-link text-white">Deportes</a></li>
+        <li class="nav-item"><a href="#negocios" class="nav-link text-white">Negocios</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero principal -->
+  <section id="inicio" class="hero">
+    <h1 class="text-center">Últimas Noticias</h1>
+
+    <!-- Noticia destacada -->
+    <div class="highlight-news row g-4 mt-3">
+      <div class="col-12 col-md-6">
+        <img src="https://ucsc.cl/content/uploads/2025/04/papa-francisco.jpg" class="img-fluid rounded" alt="Noticia principal">
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="news-category">Actualidad</div>
+        <div class="news-title">Qué pasará ahora tras la muerte de Francisco y cómo se elegirá al nuevo Papa</div>
+        <p>El papa Francisco falleció este lunes a los 88 años, tras 12 años como líder espiritual de la Iglesia católica.<br><br>¿Qué pasa ahora tras la muerte del Papa?
+          Las funciones oficiales quedan a cargo del camarlengo o chambelán del Papa, cargo actualmente ocupado por el cardenal irlandés-estadounidense Kevin Farrell.<br>Él es quien confirma oficialmente el fallecimiento, con un médico y un certificado de defunción. No se realiza autopsia.<br><br>Este lunes, a las 20:00 hora local, se realizaron los ritos de leer la constancia del fallecimiento y la colocación del cuerpo del papa Francisco en un féretro. Estos actos fueron validados por Farrell, según informó el Vaticano.
+        </p>
+        <audio controls class="audio-player">
+          <source src="https://media.vaticannews.va/media/audio/s1/2025/03/06/21/138565255_F138565255.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+    <!--VIDEO DESTACADO-->
+    <section class="container my-5">
+      <h2 class="mb-4 text-center">Video Destacado</h2>
+      <div class="mx-auto" style="max-width: 700px;">
+        <div class="ratio ratio-16x9">
+          <iframe 
+            src="https://www.youtube.com/embed/iMU1m0-0PKY" 
+            title="Video destacado de noticias El Faro" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <p class="text-center mt-3">
+        Revive un momento inolvidable, las últimas palabras del papa Francisco.
+      </p>
+    </section>
+    
+    
+    <!-- Otras dos noticias -->
+    <div class="row g-4">
+      <div class="col-12 col-md-6">
+        <div class="card news-card">
+          <img src="https://www.pudahuel.cl/wp-content/uploads/2024/05/SII-768x432.png" class="card-img-top" alt="Noticia 2">
+          <div class="card-body">
+            <div class="news-category">Economía</div>
+            <div class="news-title">Los detalles e "inconsistencias" que descubrió el SII tras tener datos de cuentas bancarias en 2024</div>
+            <p>Durante 2024, el Servicio de Impuestos Internos (SII) comenzó a contar con la declaración jurada del “formulario 1955”.<br><br>¿Qué conlleva esto? Información sobre saldos y abonos de las cuentas de aquellas personas -y empresas- que superaron las 1.500 UF al mes, cerca unos $58 millones a la fecha actual.<br><br>Tales datos debían ser entregados por bancos e instituciones financieras como cooperativas de ahorro y crédito, compañías de seguros y entidades privadas de depósito y custodia de valores.</p>
+            <button class="btn btn-sm btn-primary" data-bs-toggle="collapse" data-bs-target="#noticia2">Leer más</button>
+            <div id="noticia2" class="collapse mt-2">
+              <p>De aquella información recopilada durante el año pasado, el SII pudo conocer, entre otros aspectos, cuál es el margen que existe en el caso de aquellos contribuyentes que pueden estar subdeclarando ingresos -reportan menos de lo que efectivamente tienen o ganan-, unto con otros aspectos que permiten focalizar los esfuerzos de fiscalización.<br><br>Según un comunicado del SII, fueron 45 los bancos e instituciones financieras que entregaron información sobre 555.982 contribuyentes, siendo 255 mil empresas y 300 mil personas.<br><br>Uno de los aspectos más destacados hace referencia a la gran diferencia entre los montos de ingresos declaraciones en el formulario 1955 y lo señalado por los contribuyentes.<br><br>El cruce de informaciones permite al organismo saber si lo declarado es correcto o si faltan ingresos que no han sido declarados.<br><br>Así, los datos arrojan que en el régimen general, los ingresos declarados en 2024 fueron de $990.583 millones, mientras que los abonos netos informados por los organismos financieros fueron de $4.091.082 millones, una diferencia del 314%.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="card news-card">
+          <img src="https://www.24horas.cl/24horas/site/artic/20240826/imag/foto_0000000220240826032700/A_UNO_1428144.jpg" class="card-img-top" alt="Noticia 3">
+          <div class="card-body">
+            <div class="news-category">Nacional</div>
+            <div class="news-title">Hombre en scooter disparó contra grupo de personas en pleno centro de Santiago: hay dos heridos a bala</div>
+            <p>Un tiroteo conmocionó el paso bajo nivel que conecta San Diego con Alameda, en pleno centro de Santiago. Según informes preliminares, un hombre que viajaba en un scooter efectuó entre 10 y 15 disparos contra un grupo de personas, dejando dos heridos con impactos balísticos. El hecho activó un amplio operativo policial para ubicar al sospechoso.<br><br>Los lesionados recibieron primeros auxilios de Carabineros en el lugar y luego fueron trasladados a la ex Posta Central. Ambos se encuentran bajo atención médica, aunque su estado de salud aún no se ha precisado.</p>
+            <button class="btn btn-sm btn-primary" data-bs-toggle="collapse" data-bs-target="#noticia3">Leer más</button>
+            <div id="noticia3" class="collapse mt-2">
+              <p>El coronel Pavez detalló que el ataque ocurrió cerca de las 19:30 horas de este lunes. Una de las víctimas, lesionada, logró acercarse a un puesto de Control de Orden Público cerca del Palacio de Gobierno para pedir ayuda.<br><br>“Una víctima cae en el lugar, y esta segunda se acerca a Carabineros para entregar los antecedentes, también lesionado producto de arma de fuego”, explicó.<br><br>Carabineros coordinó de inmediato con el Servicio de Atención Médica de Urgencia (SAMU) para estabilizar a los heridos. Ambos son adultos de nacionalidad dominicana, según confirmó la autoridad. Sin embargo, su estado de shock habría impedido que entregaran detalles sobre el contexto del ataque. “No pudieron entregar mayores antecedentes”, afirmó Pavez.<br><br>Las investigaciones preliminares apuntan a dos hipótesis: un intento de robo o un conflicto entre bandas. No obstante, el coronel aclaró que “la causa de origen va a ser objeto de investigación” por parte del Laboratorio de Criminalística (Labocar) y la Policía de Investigaciones (PDI).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deportes -->
+  <section id="deportes" class="mt-5 container">
+    <h2 class="section-title">Deportes</h2>
+    <div class="row g-4">
+      <div class="col-12 col-md-4">
+        <div class="card news-card">
+          <img src="https://media.biobiochile.cl/wp-content/uploads/2025/04/pedro-burns-alvaro-martinez-open-shimano-argentina.jpg" class="card-img-top" alt="Deporte 1">
+          <div class="card-body">
+            <div class="news-title">Chilenos brillaron en arranque del Open Shimano en Argentina: Martínez y Burns en el ’top-5’</div>
+            <p>El inicio de la nueva temporada del Open Shimano LATAM, dejó la adrenalina por las nubes, tras una primera fecha que arrancó con todo...</p>
+            <button class="btn btn-sm btn-primary" data-bs-toggle="collapse" data-bs-target="#deporte1">Leer más</button>
+            <div id="deporte1" class="collapse mt-2">
+              <p>La competencia de downhill más importante de Sudamérica, se tomó el Cerro Bayo, Argentina, donde llegaron los mejores representantes de la disciplina de la región, entre ellos, el atleta nacional, Pedro Burns, quien tras una reñida carrera se ubicó en el quinto lugar.<br><br>El circuito, uno de las más exigentes, fue acompañado de un clima que favoreció a los competidores, que demostraron que el nivel año a año se pone más competitivo.<br><br>“Estoy contento con el ritmo y el desempeño. Fue una carrera muy apretada. Este año ha estado intenso. He corrido harto desde Red Bull Valparaíso Cero Abajo, Guanajuato, DH Series, Panamericano, pero voy bien y me he sentido de igual forma”, expresó Burns.<br><br>“Obviamente, con ganas de ir por más, pero fue un gran fin de semana”, agregó Pedro, quien ya está viajando de regreso a Chile para presentarse el fin de semana en Nevados de Chillán para ‘El Rey del Bikepark’.<br><br>El podio de la primera ronda del Open Shimano, lo lideró el argentino Gonzalo Gadjosech con la medalla de oro. En segundo lugar, su compatriota Pablo Seewald, mientras que en la tercera posición se ubicó otro chileno, Álvaro Martínez, quien sorprendió a todos los presentes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="card news-card">
+          <img src="https://media.biobiochile.cl/wp-content/uploads/2025/04/patagonian-international-marathon-video-demuestra-por-que-evento-genera-interes-mundial.jpg" class="card-img-top" alt="Deporte 2">
+          <div class="card-body">
+            <div class="news-title">Patagonian International Marathon: el video que demuestra por qué el evento genera interés mundial</div>
+            <p>El próximo sábado 6 de septiembre la comuna de Torres del Paine se vestirá de gala para recibir, por decimotercera ocasión, la Patagonian International Marathon...</p>
+            <button class="btn btn-sm btn-primary" data-bs-toggle="collapse" data-bs-target="#deporte2">Leer más</button>
+            <div id="deporte2" class="collapse mt-2">
+              <p>Se trata de un evento especial, al que cada año se suman competidores de numerosos países, con el atractivo de correr en un entorno mágico y único.<br><br>Sin ir más lejos, desde la organización (Racing Patagonia) confirmaron a BioBioChile que para la venidera versión ya hay deportistas inscritos desde 31 países.<br><br>Además, el 50% del total, por ahora, son mujeres. Todas dispuestas a desafiar las diferentes distancias de la cita: 42K, 21K y 10K.<br><br>La corrida se ha transformado en todo un clásico. La majestuosidad del escenario y el buen ambiente entre los corredores la han convertido en una competencia de alto interés.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="card news-card">
+          <img src="https://cdn.milenio.com/uploads/media/2025/04/19/robot-humanoide-tiangong-corriendo-maraton.jpg" class="card-img-top" alt="Deporte 3">
+          <div class="card-body">
+            <div class="news-title">Robot maratonista completó por primera vez carrera de 21 km en China: corrió a la par de humanos</div>
+            <p>Las carreras ya no son solo para los humanos. El robot humanoide chino “Tiangong” se convirtió en el primero de su tipo en completar una media maratón -en un entorno urbano real- tras cruzar la línea de meta luego de dos horas, 40 minutos y 42 segundos el certamen celebrado en Pekín...</p>
+            <button class="btn btn-sm btn-primary" data-bs-toggle="collapse" data-bs-target="#deporte3">Leer más</button>
+            <div id="deporte3" class="collapse mt-2">
+              <p>La prueba, que comenzó a las 07:30 hora local en el distrito tecnológico de Yizhuang, fue presentada por sus organizadores como la primera del mundo con participación oficial de robots humanoides junto a corredores humanos.<br><br>“Tiangong”, desarrollado por la empresa china Humanoid y con experiencia previa como “corredor escoba” en una prueba el pasado mes de noviembre, lideró desde el inicio una carrera concebida como escaparate de capacidades técnicas y ensayo general para el futuro.<br><br>Diseñado con estructura ligera, piernas largas y refrigeración mejorada en sus articulaciones, recorrió los 21 kilómetros con una velocidad media de entre 7 y 8 km/h, según declaró su equipo al finalizar la competencia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Negocios -->
+  <section id="negocios" class="mt-5 container">
+    <h2 class="section-title">Negocios</h2>
+    <div class="row g-4">
+      <div class="col-12 col-md-4">
+        <div class="card news-card">
+          <img src="https://media.biobiochile.cl/wp-content/uploads/2025/04/fmi-bm.jpg" class="card-img-top" alt="Negocio 1">
+          <div class="card-body">
+            <div class="news-title">FMI y Banco Mundial inician sus reuniones con los aranceles de Trump como telón</div>
+            <p>El Fondo Monetario Internacional (FMI) y el Banco Mundial (BM) iniciaron este lunes sus reuniones de primavera en un contexto marcado por la guerra arancelaria impulsada por el presidente estadounidense, Donald Trump, y por el impacto que esta tendrá en la economía...</p>
+            <button class="btn btn-sm btn-primary" data-bs-toggle="collapse" data-bs-target="#negocio1">Leer más</button>
+            <div id="negocio1" class="collapse mt-2">
+              <p>Tanto la directora gerente del FMI, Kristalina Georgieva, como el presidente del BM, Ajay Banga, han advertido ya de que la incertidumbre y la volatilidad actual provocarán un avance del Producto Interior Bruto (PIB) más lento, por lo que urge llegar a acuerdos rápido.<br><br>En concreto, la política y economista búlgara dijo el jueves que las próximas proyecciones económicas globales de su organismo “incluirán reducciones notables” en cuanto a crecimiento, “pero no recesión”, y también “alzas en las previsiones de inflación para algunos países”.<br><br>Esta próxima semana el FMI publicará tanto su informe de previsiones, conocido como WEO por sus siglas en inglés, como el Monitor Fiscal y el Informe de Estabilidad Financiera Global, donde se espera que haga balance de la salud bancaria. El FMI publica dos WEO al año, en abril y en octubre.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="card news-card">
+          <img src="https://media.biobiochile.cl/wp-content/uploads/2025/04/condecoracion-presidente-cmpc.jpg" class="card-img-top" alt="Negocio 2">
+          <div class="card-body">
+            <div class="news-title">Presidente de CMPC es condecorado en Brasil por aportes al desarrollo industrial en Rio Grande do Sul</div>
+            <p>Tras nueve años de gestión, en su último viaje a Brasil como presidente de CMPC, Luis Felipe Gazitúa fue distinguido por el gobernador de Rio Grande do Sul, Eduardo Leite, con la condecoración Vizconde de Mauá...</p>
+            <button class="btn btn-sm btn-primary" data-bs-toggle="collapse" data-bs-target="#negocio2">Leer más</button>
+            <div id="negocio2" class="collapse mt-2">
+              <p>“No somos una empresa de paso. Somos un actor que busca contribuir al desarrollo sustentable de Brasil, de Rio Grande do Sul y de sus habitantes”, dijo Gazitúa en la ceremonia.<br><br>“Han transcurrido quince años y puedo afirmar, con mucho respeto y humildad, que nos sentimos tan gaúchos como cada uno de ustedes”. Con estas palabras, el presidente de Empresas CMPC agradeció la condecoración Vizconde de Mauá, la distinción más relevante que entrega el gobierno del Estado de Rio Grande do Sul a quienes han impulsado de forma significativa el desarrollo de la región.<br><br>La ceremonia, realizada en el Palacio Piratini y encabezada por el gobernador Eduardo Leite, marcó la última visita de Gazitúa a Brasil como presidente de la compañía, quien dejará el cargo este jueves 24 de abril tras nueve años de gestión, siendo reemplazado por Bernardo Larraín Matte, actual vicepresidente de la multinacional.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="card news-card">
+          <img src="https://media.biobiochile.cl/wp-content/uploads/2025/04/social-containers.jpg" class="card-img-top" alt="Negocio 3">
+          <div class="card-body">
+            <div class="news-title">Empresa china tras el puerto de Chancay acusa "daño y falsedades" por parte de Trump y sus aranceles</div>
+            <p>La empresa naviera estatal china COSCO -dueña del 60% del puerto de Chancay en Perú- expresó este lunes su “firme oposición” a la decisión del presidente estadounidense, Donald Trump, de imponer aranceles portuarios a los buques construidos y operados por el país asiático, al tiempo que advertía del impacto de esta medida en las cadenas de suministro...</p>
+            <button class="btn btn-sm btn-primary" data-bs-toggle="collapse" data-bs-target="#negocio3">Leer más</button>
+            <div id="negocio3" class="collapse mt-2">
+              <p>La empresa indicó en un comunicado que este movimiento “no favorece la competencia justa ni el orden normal de funcionamiento comercial en la industria naviera mundial”, además de estar basado en “falsedades”.<br><br>Los nuevos aranceles portuarios “tendrán un impacto en el desarrollo estable y saludable de la industria naviera mundial y pondrán en peligro la estabilidad y la seguridad de la cadena industrial y la cadena de suministro”, manifestó COSCO.<br><br>“Como empresa responsable de envíos y logística internacional, siempre nos adherimos a los conceptos de integridad, transparencia y cumplimiento para participar en la competencia de envíos globales”, declaró la compañía, que agregó que “protegerá los intereses” de sus clientes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-5">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-4 mb-3">
+          <h5>El Faro</h5>
+          <p>Tu fuente confiable de noticias 24/7.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Secciones</h5>
+          <ul class="list-unstyled">
+            <li><a href="#inicio" class="text-white text-decoration-none">Inicio</a></li>
+            <li><a href="#deportes" class="text-white text-decoration-none">Deportes</a></li>
+            <li><a href="#negocios" class="text-white text-decoration-none">Negocios</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Contacto</h5>
+          <p>Email: contacto@elfaro.cl<br>Teléfono: +56 9 1234 5678</p>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <small>&copy; 2025 El Faro. Todos los derechos reservados.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
